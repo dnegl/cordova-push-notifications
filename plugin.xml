@@ -116,6 +116,13 @@
 
     <header-file src="src/ios/AppDelegate+notification.h" />
     <header-file src="src/ios/PushPlugin.h" />
+    
+    <config-file target="*-Debug.plist" parent="aps-environment">
+      <string>development</string>
+    </config-file>
+    <config-file target="*-Release.plist" parent="aps-environment">
+      <string>production</string>
+    </config-file>
 
   </platform>
 
